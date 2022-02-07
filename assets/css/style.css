@@ -1,0 +1,185 @@
+:focus{
+    outline: none;
+}
+
+.break-all{
+    word-break: break-all;
+}
+
+.w-33{
+    width: 33.333%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+a.title{
+    text-decoration: none;
+}
+
+a.title h1{
+    color: #000;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"],
+textarea{
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 8px;
+    transition-property: background-color, border;
+    transition-duration: .2s;
+    margin: 0 0 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea{
+    border: 1px solid #9e9e9e;
+}
+
+input[type="submit"]{
+    border-color: #F87C00;
+    background-color: #F87C00;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+textarea::placeholder{
+    color: #9e9e9e;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus{
+    border-color: #86bde2;
+}
+
+input[type="submit"]:hover{
+    border-color: #924900;
+    background-color: #924900;
+}
+
+.search input[type="text"]{
+    width: 100%;
+    max-width: 380px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.hotels{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.hotels .no-results{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.hotels a.hotel{
+    width: 25%;
+    display: flex;
+    color: #000;
+    text-decoration: none;
+}
+
+.hotels .hotel-inner{
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #9e9e9e;
+    border-radius: 4px;
+    margin: 15px;
+    transition-property: box-shadow;
+    transition-duration: .2s;
+    box-shadow: 0 0 0 0 #9e9e9e;
+    width: 100%;
+}
+
+.hotels a:hover .hotel-inner{
+    box-shadow: 0 5px 10px 0 #9e9e9e;
+}
+
+.hotels .hotel h2{
+    font-size: 20px;
+}
+
+.hotel-details form label{
+    display: inline-block;
+
+}
+
+.hotel-details .form-container{
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hotel-details .form-item{
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.hotel-details .form-item input[type="text"],
+.hotel-details .form-item input[type="email"],
+.hotel-details .form-item input[type="tel"],
+.hotel-details .form-item textarea{
+    display: block;
+    width: 100%;
+}
+
+.hotel-details .success{
+    border-radius: 4px;
+    background-color: #6FC362;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+    .w-33{
+        width: 100%;
+    }
+
+    .w-50{
+        width: 100%;
+    }
+
+    .hotels a.hotel{
+        width: 33.33%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .hotels a.hotel{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .hotels a.hotel{
+        width: 100%;
+    }
+}
